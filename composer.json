@@ -1,0 +1,17 @@
+{
+    "name": "franc/bbrainy",
+    "autoload": {
+        "psr-4": {
+            "Franc\\Bbrainy\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ilmarckk",
+            "email": "marckthewebsite@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^3.3"
+    }
+}

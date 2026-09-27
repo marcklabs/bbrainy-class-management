@@ -1,0 +1,26 @@
+# Local configuration / secrets
+config.php
+.env
+.env.*
+
+# Dependencies
+vendor/
+
+# Composer PHAR
+composer.phar
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs / temporary files
+*.log
+*.tmp
+
+# Generated files
+registrations.xlsx

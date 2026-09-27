@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+body {
+    background-image: url(background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 100px;
+}
+header {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.profile-icon img {
+    width: 30px;
+    height: 30px;
+}
+.navbar {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 18px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    align-items: center; /* Allinea verticalmente gli elementi */
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column; /* Allinea icona e testo in colonna */
+    align-items: center; /* Allinea icona e testo al centro */
+    font-weight: bold;
+}
+
+.navbar-icon {
+    width: 30px; /* Dimensione dell'icona */
+    height: 30px; /* Dimensione dell'icona */
+    margin-bottom: 5px; /* Spazio tra icona e testo */
+}
+
+.navbar span {
+    font-size: 12px; /* Dimensione del testo */
+}
+
+.navbar a.active {
+    color: #2d2d3e;
+    font-weight: bold;
+}
+.content {
+    margin-top: 100px; /* Offset per l'header */
+    margin-bottom: 70px; /* Offset per la navbar */
+    overflow-y: auto;
+    height: calc(100vh - 170px); /* Altezza totale - header - navbar */
+}
